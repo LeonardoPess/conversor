@@ -1,0 +1,27 @@
+.header {
+  padding: 1.25rem 2.5rem;
+  background: #1F2839;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  display: inline-block;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.header .sep {
+  width: 20px;
+  height: 3px;
+
+  display: inline-block;
+  margin: 0 20px;
+
+  background: rgba(255, 255, 255, .3);
+}

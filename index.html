@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Conversor</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <h1>Cristiane Dupret</h1>
+      <div class="sep"></div>
+      <h1>Calculadora de Execução Penal</h1>
+    </div>
+  </header>
+
+  <section class="conversor">
+    <div class="container">
+      <h2 class="title">Conversor</h2>
+
+      <div class="conversor-wrapper">
+        <section class="yearsAndDays">
+          <div class="subtitle">
+            <h3>Anos e dias</h3>
+          </div>
+          <div class="container">
+            <p>Converta anos, meses e dias para dias.</p>
+
+            <label class="label" for="changeConversor">Converter de:</label>
+            <select class="select" name="changeConversor" id="changeConversor">
+              <option value="yearsToDays">Anos para dias</option>
+              <option value="daysToYears">Dias para anos</option>
+            </select>
+
+            <form id="yearsToDays">
+              <input class="input" id="anos" placeholder="anos" type="number">
+              <input class="input" id="meses" placeholder="meses" type="number">
+              <input class="input" id="dias" placeholder="dias" type="number">
+              <div class="calculate-wrapper">
+                <button class="button">Calcular</button>
+                <div class="result"></div>
+              </div>
+            </form>
+
+            <form id="daysToYears">
+              <input class="input" id="dias2" placeholder="dias" type="number">
+              <div class="calculate-wrapper">
+                <button class="button">Calcular</button>
+                <div class="result"></div>
+              </div>
+            </form>
+
+          </div><!--container-->
+        </section><!--yearsAndDays-->
+
+        <section class="fractionAndPercentage">
+          <div class="subtitle subtitle1">
+            <h3>Fração e porcentagem</h3>
+          </div>
+          <div class="container">
+            <p>Converta os dias em frações e porcentagens.</p>
+
+            <form id="fracoes">
+              <label class="label" class="label" for="dias2">Dias:</label>
+              <input class="input" id="dias3" placeholder="0" type="number">
+              <button class="button">Calcular</button>
+            </form>
+
+            <div class="select-slides">
+              <p class="select-fra active">Fração</p>
+              <p class="select-per">Porcentagem</p>
+            </div>
+
+            <div class="slide">
+              <div class="fracao">
+                <svg class="l" width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.61651e-07 11L11 22L11 0L9.61651e-07 11Z" fill="#1F2839" fill-opacity="0.3"/>
+                </svg>
+                <div class="fracao-single"><p>1/6</p><span id="fra16">0 Dias</span></div>
+                <div class="fracao-single"><p>1/5</p><span id="fra15">0 Dias</span></div>
+                <div class="fracao-single"><p>1/4</p><span id="fra14">0 Dias</span></div>
+                <div class="fracao-single"><p>1/3</p><span id="fra13">0 Dias</span></div>
+                <svg class="r" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 11.5L0 0.5V22.5L11 11.5Z" fill="#1F2839" fill-opacity="0.3"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="porcentagem">
+                <svg class="l" width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.61651e-07 11L11 22L11 0L9.61651e-07 11Z" fill="#1F2839" fill-opacity="0.3"/>
+                </svg>
+                <div class="porcentagem-single"><p>16%</p><span id="por16">0 Dias</span></div>
+                <div class="porcentagem-single"><p>20%</p><span id="por20">0 Dias</span></div>
+                <div class="porcentagem-single"><p>25%</p><span id="por25">0 Dias</span></div>
+                <div class="porcentagem-single"><p>30%</p><span id="por30">0 Dias</span></div>
+                <svg class="r" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 11.5L0 0.5V22.5L11 11.5Z" fill="#1F2839" fill-opacity="0.3"/>
+                </svg>
+              </div>
+            </div>
+
+          </div><!--container-->
+        </section>
+      </div><!--conversor-wrapper-->
+
+    </div><!--container-->
+  </section>
+
+  <section class="calculos">
+    <div class="container">
+      <h2 class="title">Cálculos</h2>
+
+      <div class="calculos-wrapper">
+        <section class="dateAndDays">
+          <div class="subtitle">
+            <h3>Datas e dias</h3>
+          </div>
+          <div class="container">
+            <p>Some ou subtraía dias de uma data.</p>
+
+            <form id="formDate">
+              <input class="input" id="data" type="date">
+              <input class="input" id="dias4" placeholder="Dias" type="number">
+            </form>
+
+            <label class="label" for="changeCalculate">*Selecione o tipo do cálculo:</label>
+            <select class="select" name="changeCalculate" id="changeCalculate">
+              <option value="sum">Soma</option>
+              <option value="sub">Subitração</option>
+            </select>
+          
+
+            <div class="calculate-wrapper">
+              <button form="formDate" class="button">Calcular</button>
+              <div class="result resultDateAndDays"></div>
+            </div>
+          </div><!--container-->
+        </section><!--yearsAndDays-->
+
+        <section class="dateDifferences">
+          <div class="subtitle">
+            <h3>Subtrair datas</h3>
+          </div>
+          <div class="container">
+            <p>Calcule a diferença entre duas data.</p>
+
+            <form id="formDateDifferences">
+              <input class="input" id="data1" type="date">
+              <input class="input" id="data2" type="date">
+            </form>
+
+            <div class="calculate-wrapper">
+              <button form="formDateDifferences" class="button">Calcular</button>
+              <div class="result resultDateDifferences"></div>
+            </div>
+          </div><!--container-->
+        </section>
+      </div><!--conversor-wrapper-->
+    </div><!--container-->
+  </section>
+
+<script type="module" src="./src/App.js"></script>
+</body>
+</html>

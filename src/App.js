@@ -9,7 +9,7 @@ import initChangeSlide from './modules/changeSlide.js';
 
 const url = window.location.pathname;
 
-if (url === '/conversor-projeto/' || url === '/conversor-projeto/index.html') {
+if (url === '/conversor/' || url === '/conversor/index.html') {
   initConverterToDays();
   initConverterToYears();
   initConverterToFraction();

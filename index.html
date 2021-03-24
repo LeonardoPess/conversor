@@ -13,7 +13,7 @@
     <div class="container">
       <h1>Cristiane Dupret</h1>
       <div class="sep"></div>
-      <h1>Calculadora de Execução Penal</h1>
+      <h1>Calculadora da Execução Penal</h1>
     </div>
   </header>
 
@@ -74,35 +74,59 @@
               <p class="select-per">Porcentagem</p>
             </div>
 
-            <div class="slide">
-              <div class="fracao">
-                <svg class="l" width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.61651e-07 11L11 22L11 0L9.61651e-07 11Z" fill="#1F2839" fill-opacity="0.3"/>
-                </svg>
-                <div class="fracao-single"><p>1/6</p><span id="fra16">0 Dias</span></div>
-                <div class="fracao-single"><p>1/5</p><span id="fra15">0 Dias</span></div>
-                <div class="fracao-single"><p>1/4</p><span id="fra14">0 Dias</span></div>
-                <div class="fracao-single"><p>1/3</p><span id="fra13">0 Dias</span></div>
-                <svg class="r" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 11.5L0 0.5V22.5L11 11.5Z" fill="#1F2839" fill-opacity="0.3"/>
-                </svg>
-              </div>
-            </div>
+              <div data-slide="slide-fra" class="slide">
+                <div class="slide-items">
+                  <div class="fracao active" data-slideItem="0">
+                    <div class="fracao-single"><p>1/6</p><span id="fra16">0 Dias</span></div>
+                    <div class="fracao-single"><p>1/5</p><span id="fra15">0 Dias</span></div>
+                    <div class="fracao-single"><p>1/4</p><span id="fra14">0 Dias</span></div>
+                    <div class="fracao-single"><p>1/3</p><span id="fra13">0 Dias</span></div>
+                    <nav>
+                      <svg tabindex="1" class="slide-next" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11.5L0 0.5V22.5L11 11.5Z" fill="#1F2839" fill-opacity="0.3"/></svg>
+                    </nav>
+                  </div><!--fracao-->
+                  <div class="fracao" data-slideItem="1">
+                    <div class="fracao-single"><p>3/8</p><span id="fra38">0 Dias</span></div>
+                    <div class="fracao-single"><p>2/5</p><span id="fra25">0 Dias</span></div>
+                    <div class="fracao-single"><p>5/12</p><span id="fra512">0 Dias</span></div>
+                    <div class="fracao-single"><p>11/24</p><span id="fra1124">0 Dias</span></div>
+                    <nav>
+                      <svg tabindex="0" class="slide-next" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11.5L0 0.5V22.5L11 11.5Z" fill="#1F2839" fill-opacity="0.3"/></svg>
+                      <svg tabindex="2" class="slide-prev" width="11" height="23" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.61651e-07 11L11 22L11 0L9.61651e-07 11Z" fill="#1F2839" fill-opacity="0.3"/></svg>
+                    </nav>
+                  </div><!--fracao-->
+                  <div class="fracao" data-slideItem="2">
+                    <div class="fracao-single"><p>1/2</p><span id="fra12">0 Dias</span></div>
+                    <div class="fracao-single"><p>3/5</p><span id="fra35">0 Dias</span></div>
+                    <div class="fracao-single"><p>2/3</p><span id="fra23">0 Dias</span></div>
+                    <nav>
+                      <svg tabindex="1" class="slide-prev" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.61651e-07 11L11 22L11 0L9.61651e-07 11Z" fill="#1F2839" fill-opacity="0.3"/></svg>
+                    </nav>
+                  </div><!--fracao-->
+                </div><!--slide-items-->
+              </div><!--slide-->
 
-            <div class="slide">
-              <div class="porcentagem">
-                <svg class="l" width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.61651e-07 11L11 22L11 0L9.61651e-07 11Z" fill="#1F2839" fill-opacity="0.3"/>
-                </svg>
-                <div class="porcentagem-single"><p>16%</p><span id="por16">0 Dias</span></div>
-                <div class="porcentagem-single"><p>20%</p><span id="por20">0 Dias</span></div>
-                <div class="porcentagem-single"><p>25%</p><span id="por25">0 Dias</span></div>
-                <div class="porcentagem-single"><p>30%</p><span id="por30">0 Dias</span></div>
-                <svg class="r" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 11.5L0 0.5V22.5L11 11.5Z" fill="#1F2839" fill-opacity="0.3"/>
-                </svg>
-              </div>
-            </div>
+              <div data-slide="slide-per" class="slide">
+                <div class="slide-items">
+                  <div class="porcentagem" data-slideItem="0">
+                    <div class="porcentagem-single"><p>16%</p><span id="por16">0 Dias</span></div>
+                    <div class="porcentagem-single"><p>20%</p><span id="por20">0 Dias</span></div>
+                    <div class="porcentagem-single"><p>25%</p><span id="por25">0 Dias</span></div>
+                    <div class="porcentagem-single"><p>30%</p><span id="por30">0 Dias</span></div>
+                    <nav>
+                      <svg tabindex="1" class="slide-next" width="11" height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 11.5L0 0.5V22.5L11 11.5Z" fill="#1F2839" fill-opacity="0.3"/></svg>
+                    </nav>
+                  </div><!--porcentagem-->
+                  <div class="porcentagem" data-slideItem="1">
+                    <div class="porcentagem-single"><p>40%</p><span id="por40">0 Dias</span></div>
+                    <div class="porcentagem-single"><p>50%</p><span id="por50">0 Dias</span></div>
+                    <div class="porcentagem-single"><p>60%</p><span id="por60">0 Dias</span></div>
+                    <div class="porcentagem-single"><p>70%</p><span id="por70">0 Dias</span></div>
+                    <nav>
+                      <svg tabindex="2" class="slide-prev" width="11" height="23" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.61651e-07 11L11 22L11 0L9.61651e-07 11Z" fill="#1F2839" fill-opacity="0.3"/></svg>
+                    </nav>
+                </div><!--slide-items-->
+              </div><!--slide-->
 
           </div><!--container-->
         </section>
@@ -131,7 +155,7 @@
             <label class="label" for="changeCalculate">*Selecione o tipo do cálculo:</label>
             <select class="select" name="changeCalculate" id="changeCalculate">
               <option value="sum">Soma</option>
-              <option value="sub">Subitração</option>
+              <option value="sub">Subtração</option>
             </select>
           
 
@@ -163,6 +187,10 @@
       </div><!--conversor-wrapper-->
     </div><!--container-->
   </section>
+
+  <div class="box-alert">
+    <p>Valor copiado para área de tranferência.</p>
+  </div>
 
 <script src="./src/App.js"></script>
 </body>
